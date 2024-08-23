@@ -37,25 +37,15 @@
             border-radius: 8px;
         }
         .section {
-            display: flex;
-            flex-wrap: wrap;
             margin-bottom: 40px;
         }
         .section img {
-            flex: 1;
-            max-width: 45%;
-            height: 100%;
-            margin: 0 20px;
-            border-radius: 8px;
-            object-fit: cover;
-        }
-        .section .content {
-            flex: 1;
+            float: left; /* or right */
             max-width: 50%;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            height: auto;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
         }
         .section h2 {
             font-size: 2rem;
@@ -68,8 +58,10 @@
             text-align: justify;
             line-height: 1.8;
         }
-        .section.reverse {
-            flex-direction: row-reverse;
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
         }
     </style>
 </head>
@@ -79,22 +71,12 @@
         <p>Digital Society | Internet Dating</p>
     </header>
     <div class="container">
-        <section id="introduction" class="section">
-            <img src="https://placehold.co/450x300" alt="Introduction Image">
-            <div class="content">
-                <h2>Introduction</h2>
-                <p>In today’s digital society, the prevalence of online dating is undeniable. The advent of technology has revolutionized the way we connect with others, bringing new opportunities for relationships to flourish beyond traditional boundaries. However, while online dating offers new avenues for connection, it also brings significant challenges that need to be addressed, especially from a Christian perspective. These challenges relate to the authenticity of online personas, the trustworthiness of digital interactions, and the psychological impact on individuals. This ministry plan seeks to address these issues through a culturally relevant, theologically grounded approach that supports individuals in navigating the complexities of online relationships with faith and integrity.</p>
-            </div>
+        <section id="introduction" class="section clearfix">
+            <img src="https://placehold.co/500x300" alt="Introduction Image">
+            <h2>Introduction</h2>
+            <p>In today’s digital society, the prevalence of online dating is undeniable. The advent of technology has revolutionized the way we connect with others, bringing new opportunities for relationships to flourish beyond traditional boundaries. However, while online dating offers new avenues for connection, it also brings significant challenges that need to be addressed, especially from a Christian perspective. These challenges relate to the authenticity of online personas, the trustworthiness of digital interactions, and the psychological impact on individuals. This ministry plan seeks to address these issues through a culturally relevant, theologically grounded approach that supports individuals in navigating the complexities of online relationships with faith and integrity.</p>
+            <p>These challenges relate to the authenticity of online personas, the trustworthiness of digital interactions, and the psychological impact on individuals. This ministry plan seeks to address these issues through a culturally relevant, theologically grounded approach that supports individuals in navigating the complexities of online relationships with faith and integrity.</p>
         </section>
-        <section id="core-issues" class="section reverse">
-            <img src="https://placehold.co/450x300" alt="Core Issues Image">
-            <div class="content">
-                <h2>Core Issues</h2>
-                <p>A significant issue in online dating is the authenticity of individuals' online personas. In the digital realm, it is easy for people to present idealized versions of themselves, crafting profiles that may not fully reflect who they are in reality. This can lead to distrust and disappointment when expectations are not met. The anonymity provided by the internet also makes it easier for individuals to deceive others, whether intentionally or unintentionally. This ministry plan will focus on promoting honesty and integrity in digital interactions, helping individuals to present their true selves online and fostering genuine connections based on trust.</p>
-                <p>The psychological effects of online dating cannot be overlooked. Many individuals experience emotional distress due to the unrealistic expectations set by online interactions. The constant availability of potential partners can create a sense of overwhelm, leading to decision fatigue and a reluctance to commit. Additionally, the ease of accessing multiple potential partners can contribute to a lack of commitment and a superficial approach to relationships. This ministry will provide resources and support to help individuals manage the psychological challenges of online dating, promoting healthy, stable relationships that are rooted in Christian values.</p>
-            </div>
-        </section>
-        <!-- Additional sections can follow the same structure -->
     </div>
 </body>
 </html>
